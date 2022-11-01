@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:backgroundTint="@color/bg_color"
+   >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/user_details"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:orientation="horizontal">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            tools:srcCompat="@tools:sample/avatars"
+            app:shapeAppearanceOverlay="@style/Circular"/>
+    <Button
+        android:id="@+id/username"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textAlignment="textStart"
+        android:text="@string/button"
+         />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ImageView
+        android:id="@+id/user_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_details"
+        android:contentDescription="post"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+
+        tools:src="@drawable/photography" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/reaction_tab"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/user_post"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/b_like"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/heart"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/b_comment"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/comment"
+            android:contentDescription="comment"
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/user_post"
+        android:layout_alignRight="@id/reaction_tab"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/save" />
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:id="@+id/text_view"
+        android:layout_below="@id/reaction_tab"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_text"
+        app:trimExpandedText="Read more"
+        app:trimCollapsedText="Show less"
+        app:trimMode="trimModeLength"
+        app:trimLength="40"
+        app:colorClickableText="@color/accent"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

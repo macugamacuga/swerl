@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "302516315315",
+    "project_id": "swerl-19a87",
+    "storage_bucket": "swerl-19a87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302516315315:android:ddf0296223eb0b93997cc6",
+        "android_client_info": {
+          "package_name": "com.example.swerl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302516315315-bntnf0ss57435supp9detmesnoohl4i5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0NVRCi54exoYDtIlpGzXDRh5bb0EvsqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302516315315-bntnf0ss57435supp9detmesnoohl4i5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
